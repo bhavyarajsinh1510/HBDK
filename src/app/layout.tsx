@@ -1,9 +1,22 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
+  themeColor: "#FAF7F2",
+};
 
 export const metadata: Metadata = {
   title: "Happy Birthday Khushi! ✨ | From Bhavya",
   description: "A personalized, interactive digital birthday celebration for Khushi.",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Happy Birthday Khushi!",
+  },
 };
 
 export default function RootLayout({
@@ -21,7 +34,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased min-h-screen bg-[#FAF7F2] text-[#2D2D2D] selection:bg-[#F5E6E8] selection:text-[#C56868]">
+      <body className="antialiased min-h-screen bg-[#FAF7F2] text-[#2D2D2D] selection:bg-[#F5E6E8] selection:text-[#C56868] overflow-x-hidden">
         {children}
       </body>
     </html>
