@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { MailOpen } from "lucide-react";
+import { MailOpen, Sparkles } from "lucide-react";
 
 export default function BirthdayLetter() {
   return (
@@ -11,7 +11,7 @@ export default function BirthdayLetter() {
       <div className="text-center mb-8 sm:mb-10">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F7E7EA] text-[#C56868] text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-2.5">
           <MailOpen className="w-3.5 h-3.5" />
-          <span>From the Heart</span>
+          <span>From Your Best Friend</span>
         </div>
         <h2 className="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-[#2D2D2D]">
           The Birthday Letter
@@ -40,9 +40,9 @@ export default function BirthdayLetter() {
             </p>
           </div>
 
-          {/* Rose Gold Wax Seal */}
+          {/* Classic Wax Seal Accent */}
           <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-gradient-to-tr from-[#C56868] via-[#D43745] to-[#B95757] flex items-center justify-center text-white shadow-md shadow-[#C56868]/30 border-2 border-white/60 shrink-0">
-            <span className="font-serif font-bold text-xs sm:text-sm select-none">B &hearts; K</span>
+            <Sparkles className="w-4 sm:w-5 h-4 sm:h-5 text-amber-200" />
           </div>
         </div>
 

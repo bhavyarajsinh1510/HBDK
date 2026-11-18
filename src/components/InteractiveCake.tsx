@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, Wind, RotateCcw, Heart, CheckCircle2 } from "lucide-react";
+import { Sparkles, Wind, RotateCcw, Star, CheckCircle2 } from "lucide-react";
 import confetti from "canvas-confetti";
 import { playBlowCandlesSound } from "@/lib/soundEffects";
 
@@ -151,9 +151,9 @@ export default function InteractiveCake() {
             <div className="absolute top-0 inset-x-0 h-1.5 bg-[#D4AF37]/40" />
             <div className="flex gap-3 sm:gap-4 opacity-50">
               <Sparkles className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#C56868]" />
-              <Heart className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#C56868]" />
+              <Star className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#D4AF37] fill-[#D4AF37]/40" />
               <Sparkles className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#C56868]" />
-              <Heart className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#C56868]" />
+              <Star className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#D4AF37] fill-[#D4AF37]/40" />
             </div>
             <div className="w-full h-2 bg-white/40 absolute bottom-1" />
           </div>

@@ -2,14 +2,14 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Heart, Feather, Sparkles, Compass } from "lucide-react";
+import { Sun, Feather, Sparkles, Compass } from "lucide-react";
 
 export default function AdmireSection() {
   const virtues = [
     {
       title: "Genuine Kindness",
       subtitle: "Warmth without conditions",
-      icon: Heart,
+      icon: Sun,
       accent: "#C56868",
       bgLight: "#F7E7EA",
       description:
